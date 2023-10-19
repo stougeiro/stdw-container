@@ -56,6 +56,11 @@
             return $instance;
         }
 
+        public function make(string $abstract): mixed
+        {
+            return $this->get($abstract);
+        }
+
         public function set(string $abstract, callable|string|null $concrete = null, bool $shareable = false): void
         {
             if ($this->has($abstract)) {
@@ -69,6 +74,16 @@
             }
 
             static::$entries[$abstract] = [$concrete, $shareable];
+        }
+
+        public function bind(string $abstract, callable|string|null $concrete = null): void
+        {
+            $this->set($abstract, $concrete, false);
+        }
+
+        public function singleton(string $abstract, callable|string|null $concrete = null): void
+        {
+            $this->set($abstract, $concrete, true);
         }
 
 

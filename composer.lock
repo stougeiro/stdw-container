@@ -61,21 +61,75 @@
             "time": "2023-09-22T11:11:30+00:00"
         },
         {
+            "name": "psr/simple-cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/master"
+            },
+            "time": "2022-04-08T16:41:45+00:00"
+        },
+        {
             "name": "stougeiro/stdw-contract",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stougeiro/stdw-contract.git",
-                "reference": "a0978223e0c55b29f00de2e80126cf7effaff60f"
+                "reference": "d09d5aa2b47e1f17f9ac6eb972bfe3a9341d6d5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stougeiro/stdw-contract/zipball/a0978223e0c55b29f00de2e80126cf7effaff60f",
-                "reference": "a0978223e0c55b29f00de2e80126cf7effaff60f",
+                "url": "https://api.github.com/repos/stougeiro/stdw-contract/zipball/d09d5aa2b47e1f17f9ac6eb972bfe3a9341d6d5b",
+                "reference": "d09d5aa2b47e1f17f9ac6eb972bfe3a9341d6d5b",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.1",
+                "psr/container": "^2.0@dev",
+                "psr/simple-cache": "^3.0@dev"
             },
             "default-branch": true,
             "type": "package",
@@ -98,7 +152,7 @@
                 "issues": "https://github.com/stougeiro/stdw-contract/issues",
                 "source": "https://github.com/stougeiro/stdw-contract/tree/main"
             },
-            "time": "2023-10-19T10:54:31+00:00"
+            "time": "2023-10-19T13:28:17+00:00"
         }
     ],
     "packages-dev": [],
