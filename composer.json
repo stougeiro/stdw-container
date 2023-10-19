@@ -1,0 +1,21 @@
+{
+    "name": "stougeiro/stdw-container",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "S.Tougeiro",
+            "email": "sidneytougeiro@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "STDW\\Container\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "psr/container": "^2.0@dev",
+        "stougeiro/stdw-contract": "dev-main"
+    }
+}
