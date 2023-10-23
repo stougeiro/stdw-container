@@ -65,7 +65,7 @@
         {
             if ($this->has($abstract)) {
                 throw new ContainerException(
-                    'Class "' . $abstract . '" is already exists'
+                    'Container: Class "' . $abstract . '" is already exists'
                 );
             }
 
@@ -98,7 +98,7 @@
 
             if ( ! $reflectionClass->isInstantiable()) {
                 throw new ContainerException(
-                    'Class "' . $abstract . '" is not instantiable'
+                    'Container: Class "' . $abstract . '" is not instantiable'
                 );
             }
 
@@ -123,13 +123,13 @@
 
                     if ( ! $type) {
                         throw new ContainerException(
-                            'Failed to resolve class "' . $abstract . '" because param "' . $name . '" is missing a type hint'
+                            'Container: Failed to resolve class "' . $abstract . '" because param "' . $name . '" is missing a type hint'
                         );
                     }
 
                     if ($type instanceof \ReflectionUnionType) {
                         throw new ContainerException(
-                            'Failed to resolve class "' . $abstract . '" because of union type for param "' . $name . '"'
+                            'Container: Failed to resolve class "' . $abstract . '" because of union type for param "' . $name . '"'
                         );
                     }
 
@@ -138,7 +138,7 @@
                     }
 
                     throw new ContainerException(
-                        'Failed to resolve class "' . $abstract . '" because invalid param "' . $name . '"'
+                        'Container: Failed to resolve class "' . $abstract . '" because invalid param "' . $name . '"'
                     );
                 },
 
